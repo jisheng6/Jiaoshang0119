@@ -23,7 +23,7 @@ import retrofit2.http.QueryMap;
  */
 //http://120.27.23.105/product/searchProducts?keywords=%E7%AC%94%E8%AE%B0%E6%9C%AC&page=1
 public interface IGetDataBase {
-    @GET("product/searchProducts?keywords=%E7%AC%94%E8%AE%B0%E6%9C%AC&page=1")
+    @GET("/ad/getAd")
     Observable<Bean> getShangPin();
     //删除
     //https://www.zhaoapi.cn/product/deleteCart?uid=1650&pid=58

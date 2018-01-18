@@ -28,7 +28,7 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.IViewholder>{
     private Context context;
-    private List<Bean.DataBean> list;
+    private List<Bean.TuijianBean.ListBean> list;
     public MyAdapter(Context context) {
         this.context = context;
     }
@@ -39,7 +39,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.IViewholder>{
         if (bean.getData() == null){
             Toast.makeText(context, "不能为空", Toast.LENGTH_SHORT).show();
         }else{
-            list.addAll(bean.getData());
+            list.addAll(bean.getTuijian().getList());
 
         }
         notifyDataSetChanged();
